@@ -1,5 +1,5 @@
 plugins {
-    kotlin("js") version "1.3.72"
+    kotlin("js") version "1.4.0"
 }
 
 group = "org.example"
@@ -14,4 +14,6 @@ dependencies {
     implementation(npm("express", "4.17.1"))
 }
 
-kotlin.target.nodejs { }
+kotlin.js {
+    nodejs()
+}
